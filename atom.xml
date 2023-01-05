@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>玄旭‘s Blog</title>
+  
+  <subtitle>玄旭‘s Blog</subtitle>
+  <link href="https://xu-wolf.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://xu-wolf.github.io/"/>
+  <updated>2023-01-05T13:18:00.396Z</updated>
+  <id>https://xu-wolf.github.io/</id>
+  
+  <author>
+    <name>coolwolf</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>(鸽了)markdown基本语法&amp;hexo使用指北</title>
+    <link href="https://xu-wolf.github.io/2022/12/29/markdown-ji-ben-yu-fa/"/>
+    <id>https://xu-wolf.github.io/2022/12/29/markdown-ji-ben-yu-fa/</id>
+    <published>2022-12-29T07:30:48.000Z</published>
+    <updated>2023-01-05T13:18:00.396Z</updated>
+    
+    <content type="html"><![CDATA[<p>刚出炉的新鲜博客，自然是要水一篇博文啦。</p><h1>Markdown</h1><h2 id="标题">标题</h2><p>usage：在标题前加入 # 号<br>example：</p><blockquote><p># hello world</p></blockquote><p>多级标题：</p><blockquote><p>一级：<br># one<br>二级：<br>## two<br>三级：<br>### three<br>… …</p></blockquote><hr><h2 id="换行">换行</h2><p>usage：在句子后面加两个空格后回车<br>example：</p><blockquote><p>你好。<br>再见</p></blockquote><p>你好。<br>再见</p><hr><h2 id="分段">分段</h2><p>usage：两个个段落之间隔一行<br>example：</p><blockquote><p>A段落<br>（空行）<br>B段落</p></blockquote><p>A段落</p><p>B段落</p><hr><h2 id="引用">引用</h2><p>usage：再要引用的文字前加 &gt; 号<br>example：</p><blockquote><p>&gt; hello world</p></blockquote><blockquote><p>hello world</p></blockquote><p>tips：引用内容若包含markdown语法也会被md渲染（嵌套引用）</p><hr><h2 id="粗体">粗体</h2><p>usage：文本前加两个 * 号<br>example：</p><blockquote><p>**hello** world</p></blockquote><p><strong>hello</strong> world</p><hr><h2 id="斜体">斜体</h2><p>usage：文本前加一个 * 号<br>example:</p><blockquote><p>*hello* world</p></blockquote><p><em>hello</em> world</p><hr><h2 id="代码块">代码块</h2><p>usage:把代码包裹在三个反引号 ` 中。语法高亮需要指定一种语言。</p><blockquote><p>``` c++<br>#include<cstdio><br>printf(“hello world”);<br>```</cstdio></p></blockquote><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstdio&gt;</span></span><br><span class="hljs-built_in">printf</span>(hello world);<br></code></pre></td></tr></tbody></table></figure><hr><h2 id="分割线">分割线</h2><p>usage：</p><hr><h2 id="超链接">超链接</h2><p>usage：</p><hr><h2 id="图片">图片</h2><p>usage：</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;刚出炉的新鲜博客，自然是要水一篇博文啦。&lt;/p&gt;
+&lt;h1&gt;Markdown&lt;/h1&gt;
+&lt;h2 id=&quot;标题&quot;&gt;标题&lt;/h2&gt;
+&lt;p&gt;usage：在标题前加入 # 号&lt;br&gt;
+example：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;# hello world&lt;/p&gt;
+&lt;/b</summary>
+      
+    
+    
+    
+    
+    <category term="markdown" scheme="https://xu-wolf.github.io/tags/markdown/"/>
+    
+    <category term="教程" scheme="https://xu-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+</feed>
