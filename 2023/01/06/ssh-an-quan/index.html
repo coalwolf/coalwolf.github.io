@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://xu-wolf.github.io/img/doge.png">
 <meta property="article:published_time" content="2023-01-06T02:30:48.000Z">
-<meta property="article:modified_time" content="2023-01-06T06:03:05.940Z">
+<meta property="article:modified_time" content="2023-01-06T07:17:55.356Z">
 <meta property="article:author" content="coolwolf">
 <meta property="article:tag" content="教程">
 <meta property="article:tag" content="ssh">
@@ -57,7 +57,7 @@
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/c/font_3852652_skigbwfw2k.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_3852652_cc0sfozl3fq.css">
 
 
 <link  rel="stylesheet" href="/css/main.css" />
@@ -131,9 +131,9 @@
 
 
   
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="玄旭‘s Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="玄旭‘s Blog" type="application/atom+xml">
 </head>
 
 
@@ -284,7 +284,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          814 字
+          1.1k 字
         
       </span>
     
@@ -295,7 +295,7 @@
         
         
         
-          7 分钟
+          9 分钟
         
       </span>
     
@@ -369,15 +369,21 @@
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">strings /usr/bin/ssh |grep OpenSSH<br></code></pre></td></tr></tbody></table></figure>
 <p>修改版本号</p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sed&nbsp;-i&nbsp;<span class="hljs-string">'s/OpenSSH_8.8p1/OpenSSH_7.4p1/g'</span>&nbsp;/usr/sbin/sshd<br></code></pre></td></tr></tbody></table></figure>
-<h2 id="2-开一个ssh蜜獾">2.开一个ssh蜜獾</h2>
+<h2 id="2-修改banner">2.修改banner</h2>
+<p>当ssh暴露在公网时，大量的bot会来尝试爆破你的服务器，如果你使用的是弱口令，很抱歉，你的服务器可能没了…<br>
+如果输错密码，服务器便会返回Access denied，扫描器就是通过检测服务器返回的信息来判断是否登录成功的。有些不太聪明的bot会识别banner为Access denied时认为这个密码是错的。</p>
+<p>打开sshd_config, 在末尾添加</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Banner [txt文件路径]<br></code></pre></td></tr></tbody></table></figure>
+<p>然后创建txt文件，在文件中写入Access denied或其他任意文本。重启ssh</p>
+<h2 id="3-开一个ssh蜜獾">3.开一个ssh蜜獾</h2>
 <p>这个也只能做做安全审计啥的，看看谁扫了你的假ssh，并记录他输入的命令（不会执行），可以使用sshsame</p>
 <div class="note note-danger">
             <p>warn:一个封闭的端口比一个开放的服务好。</p>
           </div>
-<h2 id="3-使用knockd">3.使用knockd</h2>
+<h2 id="4-使用knockd">4.使用knockd</h2>
 <p>比较复杂，比较安全。</p>
 <p>例如一次击中端口52996,一次击中端口2008,两次击中端口54088，这相当于敲一个关闭的门。用一种特殊的暗码来被konckd识别，konckd将打开一个端口。例如ssh端口，直到超时后或再次敲门ssh端口被knockd关掉。</p>
-<h2 id="4-用iptables重定向22端口到你仇人服务器上的ssh">4.用iptables重定向22端口到你仇人服务器上的ssh</h2>
+<h2 id="5-用iptables重定向22端口到你仇人服务器上的ssh">5.用iptables重定向22端口到你仇人服务器上的ssh</h2>
 <p>这个不好说，大家看看就行</p>
 <hr>
 <p>剩下那几个压箱底的就不说了，以免服务器被破。<img src="/img/doge.png" srcset="/img/loading.gif" lazyload alt="doge" width="50" height="50"></p>
