@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://xu-wolf.github.io/18%2B/no_sese.jpg#pic_center">
 <meta property="article:published_time" content="2022-05-31T02:05:56.000Z">
-<meta property="article:modified_time" content="2023-01-06T01:28:23.637Z">
+<meta property="article:modified_time" content="2023-01-08T03:22:39.538Z">
 <meta property="article:author" content="coolwolf">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://xu-wolf.github.io/18%2B/no_sese.jpg#pic_center">
@@ -279,23 +279,24 @@
   
     <article id="comments" lazyload>
       
-  <div id="twikoo"></div>
+  <div id="waline"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#comments', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.8/twikoo.all.min.js', function() {
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://lib.baomitu.com/waline/2.14.1/waline.min.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/waline/2.14.1/waline.min.js', function() {
         var options = Object.assign(
-          {"envId":"https://vercel-r-proxy.coolwolf.tk/"},
+          {"serverURL":"https://waline.coolwolf.tk","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":10000,"pageSize":10,"reaction":true,"login":"force"},
           {
-            el: '#twikoo',
-            path: '',
-            onCommentLoaded: function() {
-              var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
-              Fluid.plugins.imageCaption(imgSelector);
-              Fluid.plugins.fancyBox(imgSelector);
-            }
+            el: '#waline',
+            path: window.location.pathname
           }
         )
-        twikoo.init(options)
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
       });
     });
   </script>
