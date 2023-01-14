@@ -342,7 +342,31 @@
 
                 
               </div>
-            
+              <script>
+ 
+                const N = num => parseInt(num); // 转化为数字
+                const D = num => num < 10 ? '0' + num : num; // 小于10在前面补0
+                const DN = num => D(N(num)); // 两个过滤器叠加
+                const ms2023 = new Date(2023, 0, 22, 0, 0, 0).getTime(); // 新年时间， getTime()获取毫秒数
+             
+                var divEle = document.querySelector('div');
+                const Time = () => {
+                  const date = new Date().getTime(); // 当前时间的毫秒数
+                  let time = N(ms2023 - date) / 1000; // 时间差
+                  let day = N(time / (60 * 60 * 24)); // 天数
+                  time = N(time % (60 * 60 * 24));
+                  let hour = N(time / (60 * 60)); // 小时
+                  time = N(time % (60 * 60));
+                  let min = N(time / 60); // 分钟
+                  let sec = N(time % 60); // 秒数
+             
+                  divEle.innerText = `新年倒计时：${DN(day)}天${DN(hour)}时${DN(min)}分${DN(sec)}秒`; // 利用模板字符串生成
+             
+                  setInterval(Time,1000);
+                }
+                
+                Time()
+              </script>
             <hr/>
             <div>
               <div class="post-metas my-3">
