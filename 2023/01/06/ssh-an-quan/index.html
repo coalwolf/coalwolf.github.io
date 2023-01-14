@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://xu-wolf.github.io/img/doge.png">
 <meta property="article:published_time" content="2023-01-06T02:30:48.000Z">
-<meta property="article:modified_time" content="2023-01-07T06:46:39.377Z">
+<meta property="article:modified_time" content="2023-01-09T13:42:43.181Z">
 <meta property="article:author" content="coolwolf">
 <meta property="article:tag" content="教程">
 <meta property="article:tag" content="ssh">
@@ -119,9 +119,9 @@
 
 
   
-<meta name="generator" content="Hexo 6.3.0">
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="玄旭‘s Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="玄旭‘s Blog" type="application/atom+xml">
 </head>
 
 
@@ -177,18 +177,6 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/test/">
-                <i class="iconfont icon-ceshi"></i>
-                <span>公开测试</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
               <a class="nav-link" href="/18+/">
                 <i class="iconfont icon-jian"></i>
                 <span>色色</span>
@@ -217,6 +205,38 @@
                 <i class="iconfont icon-link-fill"></i>
                 <span>友链</span>
               </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-ceshi"></i>
+                <span>杂项</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/test/">
+                    
+                    <span>公开测试</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://stats.uptimerobot.com/9NDKKhzXX2">
+                    
+                    <span>在线状态</span>
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -272,7 +292,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1k 字
         
       </span>
     
@@ -352,14 +372,14 @@
 <p>比如OpenSSH 7.7前存在一个用户名枚举漏洞，通过该漏洞，攻击者可以判断某个用户名是否存在于目标主机中。</p>
 <p>现在，将ssh升级到最新版，并修改版本号为7.4，可以浪费攻击者时间，让别人不知道你的真实版本。</p>
 <p>首先备份sshd文件</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cp</span>&nbsp;/usr/sbin/sshd&nbsp;/usr/sbin/sshd.bak<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cp</span>/usr/sbin/sshd/usr/sbin/sshd.bak<br></code></pre></td></tr></tbody></table></figure>
 <p>查找版本号</p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">strings /usr/bin/ssh |grep OpenSSH<br></code></pre></td></tr></tbody></table></figure>
 <p>修改版本号</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sed&nbsp;-i&nbsp;<span class="hljs-string">'s/OpenSSH_8.8p1/OpenSSH_7.4p1/g'</span>&nbsp;/usr/sbin/sshd<br></code></pre></td></tr></tbody></table></figure>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sed-i<span class="hljs-string">'s/OpenSSH_8.8p1/OpenSSH_7.4p1/g'</span>/usr/sbin/sshd<br></code></pre></td></tr></tbody></table></figure>
 <h2 id="2-修改banner">2.修改banner</h2>
 <p>当ssh暴露在公网时，大量的bot会来尝试爆破你的服务器，如果你使用的是弱口令，很抱歉，你的服务器可能没了…<br>
-如果输错密码，服务器便会返回Access denied，扫描器就是通过检测服务器返回的信息来判断是否登录成功的。有些不太聪明的bot会识别banner为Access denied时认为这个密码是错的。</p>
+如果输错密码，服务器便会返回Permission denied，扫描器就是通过检测服务器返回的信息来判断是否登录成功的。有些不太聪明的bot会识别banner为Permission denied时认为这个密码是错的。</p>
 <p>打开sshd_config, 在末尾添加</p>
 <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">Banner [txt文件路径]<br></code></pre></td></tr></tbody></table></figure>
 <p>然后创建txt文件，在文件中写入Access denied或其他任意文本。重启ssh</p>
@@ -448,6 +468,12 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/01/14/shi-yong-mogineus-mian-fei-zi-yuan-da-jian-xu-ni-zhuan-wang/" title="使用mogenius免费资源搭建虚拟专网">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">使用mogenius免费资源搭建虚拟专网</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
@@ -474,7 +500,7 @@
       Fluid.utils.createCssLink('https://lib.baomitu.com/waline/2.14.1/waline.min.css')
       Fluid.utils.createScript('https://lib.baomitu.com/waline/2.14.1/waline.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://waline.coolwolf.tk","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":10000,"pageSize":10,"reaction":true,"login":"force"},
+          {"serverURL":"https://waline.coolwolf.tk","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":10000,"pageSize":10,"login":"force"},
           {
             el: '#waline',
             path: window.location.pathname
@@ -594,7 +620,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <br /> <a href="https://stats.uptimerobot.com/9NDKKhzXX2" target="_blank" rel="nofollow noopener"><span>在线状态</span></a> 
     </div>
   
   
