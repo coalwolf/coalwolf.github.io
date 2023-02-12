@@ -305,13 +305,53 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2023/01/14/shi-yong-mogineus-mian-fei-zi-yuan-da-jian-xu-ni-zhuan-wang/" target="_self">
+        <a href="/posts/undefined.html" target="_self">
+          在Fluid主题的一言中添加作者
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/undefined.html" target="_self">
+        <div>
+          目前，fluid主题的一言还不支持默认添加作者，所以我们需要修改首页打字机的代码。 1.打开主题根目录下的layout\_partial\plugins文件夹，修改其中的typed.ejs文件 2.找到以下语句 1apiText ? typing(apiText) : typing(text); 加入出处可在typing(apiText)中加入相应代码，示例： 1apiText ? typing(
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-02-12 15:12" pubdate>
+              2023-02-12
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/posts/undefined.html" target="_self">
           使用mogenius免费资源搭建虚拟专网
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/01/14/shi-yong-mogineus-mian-fei-zi-yuan-da-jian-xu-ni-zhuan-wang/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/undefined.html" target="_self">
         <div>
           Here's something encrypted, password is required to continue reading.
         </div>
@@ -345,13 +385,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2023/01/06/ssh-an-quan/" target="_self">
+        <a href="/posts/undefined.html" target="_self">
           保护你的ssh
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/01/06/ssh-an-quan/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/undefined.html" target="_self">
         <div>
           背景：我的第五次建站遭遇的攻击就是ssh的cve漏洞，好在我有备份的习惯。仅此记录保护过程并警示后人。 明招： 1.改端口 1nano /etc/ssh/sshd_config 将文件中port后的22改成你想要的端口 2.开启密钥登陆 建议查看openssh官方文档 3.限制密码错误次数 4.只允许白名单ip登陆 不推荐家里是动态ip的小伙伴使用 奇怪的方法： 嘿嘿，我最喜欢的部分来咯 首先，假
         </div>
@@ -373,8 +413,6 @@
             
               <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
             
-              <a href="/tags/ssh/">#ssh</a>
-            
           </div>
         
       </div>
@@ -387,13 +425,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/12/29/markdown-ji-ben-yu-fa/" target="_self">
+        <a href="/posts/undefined.html" target="_self">
           (鸽了)markdown基本语法&amp;hexo使用指北
         </a>
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/12/29/markdown-ji-ben-yu-fa/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/undefined.html" target="_self">
         <div>
           刚出炉的新鲜博客，自然是要水一篇博文啦。 Markdown 标题 usage：在标题前加入 # 号 example：  # hello world  多级标题：  一级： # one 二级： ## two 三级： ### three … …   换行 usage：在句子后面加两个空格后回车 example：  你好。 再见  你好。 再见  分段 usage：两个个段落之间隔一行 example：
         </div>
@@ -535,7 +573,38 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        typing(text);
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://v1.hitokoto.cn/',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'hitokoto'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            if(result['from_who']===null) result['from_who']='';
+            apiText ? typing('『'+apiText+'』'+ '<br /> <h4>'+ '——' +result['from_who']+'「'+result['from']+'」'+'</h4>') : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://v1.hitokoto.cn/:', error);
+            }
+            typing(text);
+          }
+        })
       
     })(window, document);
   </script>

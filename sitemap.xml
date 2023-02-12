@@ -2,18 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xu-wolf.github.io/2023/01/14/shi-yong-mogineus-mian-fei-zi-yuan-da-jian-xu-ni-zhuan-wang/</loc>
+    <loc>https://xu-wolf.github.io/posts/undefined.html</loc>
     
-    <lastmod>2023-01-14</lastmod>
+    <lastmod>2023-02-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://xu-wolf.github.io/2023/01/06/ssh-an-quan/</loc>
+    <loc>https://xu-wolf.github.io/posts/undefined.html</loc>
     
-    <lastmod>2023-01-09</lastmod>
+    <lastmod>2023-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xu-wolf.github.io/posts/undefined.html</loc>
+    
+    <lastmod>2023-01-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -65,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://xu-wolf.github.io/2022/12/29/markdown-ji-ben-yu-fa/</loc>
+    <loc>https://xu-wolf.github.io/posts/undefined.html</loc>
     
     <lastmod>2023-01-05</lastmod>
     
@@ -91,13 +100,6 @@
   
   <url>
     <loc>https://xu-wolf.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-02-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://xu-wolf.github.io/tags/ssh/</loc>
     <lastmod>2023-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
