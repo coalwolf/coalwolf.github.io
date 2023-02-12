@@ -16,23 +16,35 @@
   <meta name="author" content="coolwolf">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="玄旭‘s Blog">
-<meta property="og:url" content="https://xu-wolf.github.io/index.html">
+    <meta name="description" content="刚出炉的新鲜博客，自然是要水一篇博文啦。 Markdown 标题 usage：在标题前加入 # 号 example：  # hello world  多级标题：  一级： # one 二级： ## two 三级： ### three … …   换行 usage：在句子后面加两个空格后回车 example：  你好。 再见  你好。 再见  分段 usage：两个个段落之间隔一行 example：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(鸽了)markdown基本语法&amp;hexo使用指北">
+<meta property="og:url" content="https://xu-wolf.github.io/posts/67861b1d.html">
 <meta property="og:site_name" content="玄旭‘s Blog">
+<meta property="og:description" content="刚出炉的新鲜博客，自然是要水一篇博文啦。 Markdown 标题 usage：在标题前加入 # 号 example：  # hello world  多级标题：  一级： # one 二级： ## two 三级： ### three … …   换行 usage：在句子后面加两个空格后回车 example：  你好。 再见  你好。 再见  分段 usage：两个个段落之间隔一行 example：">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-12-29T07:30:48.000Z">
+<meta property="article:modified_time" content="2023-01-05T13:18:00.396Z">
 <meta property="article:author" content="coolwolf">
+<meta property="article:tag" content="markdown">
+<meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>玄旭‘s Blog</title>
+  <title>(鸽了)markdown基本语法&amp;hexo使用指北 - 玄旭‘s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -129,7 +141,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 100vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -267,17 +279,49 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="coolwolf&#39;s blog"></span>
+            <span id="subtitle" data-typed-text="(鸽了)markdown基本语法&amp;hexo使用指北"></span>
           
         </div>
 
         
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        coolwolf
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-12-29 15:30" pubdate>
+          2022年12月29日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          503 字
+        
+      </span>
+    
+
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
 
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
       
     </div>
   </div>
@@ -289,187 +333,288 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+<aside class="sidebar d-none d-xl-block" style="margin-right:-1rem;z-index:-1"><ins class="adsbygoogle" style="display:flex;justify-content:center;min-width:160px;max-width:300px;width:100%;height:600px;position:sticky;top:2rem" data-ad-client="ca-pub-7310750561458104" data-ad-slot="7129669490"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></aside>
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">(鸽了)markdown基本语法&amp;hexo使用指北</h1>
+            
+            
+              <div class="markdown-body">
                 
+                <p>刚出炉的新鲜博客，自然是要水一篇博文啦。</p>
+<h1>Markdown</h1>
+<h2 id="标题">标题</h2>
+<p>usage：在标题前加入 # 号<br>
+example：</p>
+<blockquote>
+<p># hello world</p>
+</blockquote>
+<p>多级标题：</p>
+<blockquote>
+<p>一级：<br>
+# one<br>
+二级：<br>
+## two<br>
+三级：<br>
+### three<br>
+… …</p>
+</blockquote>
+<hr>
+<h2 id="换行">换行</h2>
+<p>usage：在句子后面加两个空格后回车<br>
+example：</p>
+<blockquote>
+<p>你好。<br>
+再见</p>
+</blockquote>
+<p>你好。<br>
+再见</p>
+<hr>
+<h2 id="分段">分段</h2>
+<p>usage：两个个段落之间隔一行<br>
+example：</p>
+<blockquote>
+<p>A段落<br>
+（空行）<br>
+B段落</p>
+</blockquote>
+<p>A段落</p>
+<p>B段落</p>
+<hr>
+<h2 id="引用">引用</h2>
+<p>usage：再要引用的文字前加 &gt; 号<br>
+example：</p>
+<blockquote>
+<p>&gt; hello world</p>
+</blockquote>
+<blockquote>
+<p>hello world</p>
+</blockquote>
+<p>tips：引用内容若包含markdown语法也会被md渲染（嵌套引用）</p>
+<hr>
+<h2 id="粗体">粗体</h2>
+<p>usage：文本前加两个 * 号<br>
+example：</p>
+<blockquote>
+<p>**hello** world</p>
+</blockquote>
+<p><strong>hello</strong> world</p>
+<hr>
+<h2 id="斜体">斜体</h2>
+<p>usage：文本前加一个 * 号<br>
+example:</p>
+<blockquote>
+<p>*hello* world</p>
+</blockquote>
+<p><em>hello</em> world</p>
+<hr>
+<h2 id="代码块">代码块</h2>
+<p>usage:把代码包裹在三个反引号 ` 中。语法高亮需要指定一种语言。</p>
+<blockquote>
+<p>``` c++<br>
+#include<cstdio><br>
+printf(“hello world”);<br>
+```</cstdio></p>
+</blockquote>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstdio&gt;</span></span><br><span class="hljs-built_in">printf</span>(hello world);<br></code></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="分割线">分割线</h2>
+<p>usage：</p>
+<hr>
+<h2 id="超链接">超链接</h2>
+<p>usage：</p>
+<hr>
+<h2 id="图片">图片</h2>
+<p>usage：</p>
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/posts/f88aa2a0.html" target="_self">
-          在Fluid主题的一言中添加作者
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/posts/f88aa2a0.html" target="_self">
-        <div>
-          目前，fluid主题的一言还不支持默认添加作者，所以我们需要修改首页打字机的代码。 1.打开主题根目录下的layout\_partial\plugins文件夹，修改其中的typed.ejs文件 2.找到以下语句 1apiText ? typing(apiText) : typing(text); 加入出处可在typing(apiText)中加入相应代码，示例： 1apiText ? typing(
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-02-12 15:12" pubdate>
-              2023-02-12
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/posts/8105d395.html" target="_self">
-          使用mogenius免费资源搭建虚拟专网
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/posts/8105d395.html" target="_self">
-        <div>
-          Here's something encrypted, password is required to continue reading.
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-14 18:04" pubdate>
-              2023-01-14
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/posts/60b1ae39.html" target="_self">
-          保护你的ssh
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/posts/60b1ae39.html" target="_self">
-        <div>
-          背景：我的第五次建站遭遇的攻击就是ssh的cve漏洞，好在我有备份的习惯。仅此记录保护过程并警示后人。 明招： 1.改端口 1nano /etc/ssh/sshd_config 将文件中port后的22改成你想要的端口 2.开启密钥登陆 建议查看openssh官方文档 3.限制密码错误次数 4.只允许白名单ip登陆 不推荐家里是动态ip的小伙伴使用 奇怪的方法： 嘿嘿，我最喜欢的部分来咯 首先，假
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-01-06 10:30" pubdate>
-              2023-01-06
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/posts/67861b1d.html" target="_self">
-          (鸽了)markdown基本语法&amp;hexo使用指北
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/posts/67861b1d.html" target="_self">
-        <div>
-          刚出炉的新鲜博客，自然是要水一篇博文啦。 Markdown 标题 usage：在标题前加入 # 号 example：  # hello world  多级标题：  一级： # one 二级： ## two 三级： ### three … …   换行 usage：在句子后面加两个空格后回车 example：  你好。 再见  你好。 再见  分段 usage：两个个段落之间隔一行 example：
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-12-29 15:30" pubdate>
-              2022-12-29
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/markdown/">#markdown</a>
-            
-              <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
+                
               </div>
-            </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/markdown/">#markdown</a>
+      
+        <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>(鸽了)markdown基本语法&amp;hexo使用指北</div>
+      <div>https://xu-wolf.github.io/posts/67861b1d.html</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>coolwolf</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年12月29日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+<div style="width:100%;display:flex;justify-content:center;margin-bottom:1.5rem"><ins class="adsbygoogle" style="display:flex;justify-content:center;max-width:845px;width:100%;height:90px" data-ad-client="ca-pub-7310750561458104" data-ad-slot="7129669490"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div>
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/60b1ae39.html" title="保护你的ssh">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">保护你的ssh</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="waline"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://lib.baomitu.com/waline/2.14.1/waline.min.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/waline/2.14.1/waline.min.js', function() {
+        var options = Object.assign(
+          {"serverURL":"https://waline.coolwolf.tk","path":"window.location.pathname","meta":["nick"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":10000,"pageSize":10,"turnstile":"0x4AAAAAAACUSLuemdNSvrI8"},
+          {
+            el: '#waline',
+            path: window.location.pathname
+          }
+        )
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
     
 
     
@@ -573,38 +718,7 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        jQuery.ajax({
-          type: 'GET',
-          url: 'https://v1.hitokoto.cn/',
-          headers: {},
-          dataType: 'json',
-          success: function(result) {
-            var apiText;
-            if (result) {
-              var keys = 'hitokoto'.split(',');
-              if (result instanceof Array) {
-                result = result[0];
-              }
-              for (const k of keys) {
-                var value = result[k];
-                if (typeof value === 'string') {
-                  apiText = value;
-                  break;
-                } else if (value instanceof Object) {
-                  result = value;
-                }
-              }
-            }
-            if(result['from_who']===null) result['from_who']='';
-            apiText ? typing('『'+apiText+'』'+ '<br /> <h4>'+ '——' +result['from_who']+'「'+result['from']+'」'+'</h4>') : typing(text);
-          },
-          error: function(xhr, status, error) {
-            if (error) {
-              console.error('Failed to request https://v1.hitokoto.cn/:', error);
-            }
-            typing(text);
-          }
-        })
+        typing(text);
       
     })(window, document);
   </script>
@@ -618,6 +732,142 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
