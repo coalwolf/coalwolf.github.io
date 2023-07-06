@@ -24,7 +24,7 @@
 <meta property="og:description" content="目前，fluid主题的一言还不支持默认添加作者，所以我们需要修改首页打字机的代码。 1.打开主题根目录下的layout\_partial\plugins文件夹，修改其中的typed.ejs文件 2.找到以下语句 1apiText ? typing(apiText) : typing(text); 加入出处可在typing(apiText)中加入相应代码，示例： 1apiText ? typing(">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-02-12T07:12:30.000Z">
-<meta property="article:modified_time" content="2023-02-12T07:54:06.330Z">
+<meta property="article:modified_time" content="2023-02-12T07:54:06.000Z">
 <meta property="article:author" content="coolwolf">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary_large_image">
@@ -823,5 +823,20 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

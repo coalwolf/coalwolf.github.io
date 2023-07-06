@@ -24,10 +24,10 @@
 <meta property="og:description" content="刚出炉的新鲜博客，自然是要水一篇博文啦。 Markdown 标题 usage：在标题前加入 # 号 example：  # hello world  多级标题：  一级： # one 二级： ## two 三级： ### three … …   换行 usage：在句子后面加两个空格后回车 example：  你好。 再见  你好。 再见  分段 usage：两个个段落之间隔一行 example：">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-29T07:30:48.000Z">
-<meta property="article:modified_time" content="2023-02-12T07:54:06.318Z">
+<meta property="article:modified_time" content="2023-02-12T07:54:06.000Z">
 <meta property="article:author" content="coolwolf">
-<meta property="article:tag" content="markdown">
 <meta property="article:tag" content="教程">
+<meta property="article:tag" content="markdown">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -449,9 +449,9 @@ printf(“hello world”);<br>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/markdown/">#markdown</a>
-      
         <a href="/tags/%E6%95%99%E7%A8%8B/">#教程</a>
+      
+        <a href="/tags/markdown/">#markdown</a>
       
     </div>
   
@@ -887,5 +887,20 @@ printf(“hello world”);<br>
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
