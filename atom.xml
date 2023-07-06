@@ -3,11 +3,11 @@
   <title>玄旭‘s Blog</title>
   
   <subtitle>玄旭‘s Blog</subtitle>
-  <link href="https://xu-wolf.github.io/atom.xml" rel="self"/>
+  <link href="https://coalwolf.github.io/atom.xml" rel="self"/>
   
-  <link href="https://xu-wolf.github.io/"/>
+  <link href="https://coalwolf.github.io/"/>
   <updated>2023-02-12T07:54:06.000Z</updated>
-  <id>https://xu-wolf.github.io/</id>
+  <id>https://coalwolf.github.io/</id>
   
   <author>
     <name>coolwolf</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>在Fluid主题的一言中添加作者</title>
-    <link href="https://xu-wolf.github.io/posts/f88aa2a0.html"/>
-    <id>https://xu-wolf.github.io/posts/f88aa2a0.html</id>
+    <link href="https://coalwolf.github.io/posts/f88aa2a0.html"/>
+    <id>https://coalwolf.github.io/posts/f88aa2a0.html</id>
     <published>2023-02-12T07:12:30.000Z</published>
     <updated>2023-02-12T07:54:06.000Z</updated>
     
@@ -35,14 +35,14 @@
     
     
     
-    <category term="教程" scheme="https://xu-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://coalwolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>希沃冰点还原忘记密码的解决方案</title>
-    <link href="https://xu-wolf.github.io/posts/786d78c9.html"/>
-    <id>https://xu-wolf.github.io/posts/786d78c9.html</id>
+    <link href="https://coalwolf.github.io/posts/786d78c9.html"/>
+    <id>https://coalwolf.github.io/posts/786d78c9.html</id>
     <published>2023-02-10T04:28:33.000Z</published>
     <updated>2023-02-12T08:46:35.000Z</updated>
     
@@ -60,14 +60,14 @@
     
     
     
-    <category term="教程" scheme="https://xu-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://coalwolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>使用mogenius免费资源搭建虚拟专网</title>
-    <link href="https://xu-wolf.github.io/posts/8105d395.html"/>
-    <id>https://xu-wolf.github.io/posts/8105d395.html</id>
+    <link href="https://coalwolf.github.io/posts/8105d395.html"/>
+    <id>https://coalwolf.github.io/posts/8105d395.html</id>
     <published>2023-01-14T10:04:52.000Z</published>
     <updated>2023-02-12T07:54:06.000Z</updated>
     
@@ -79,14 +79,14 @@
     
     
     
-    <category term="教程" scheme="https://xu-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://coalwolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>保护你的ssh</title>
-    <link href="https://xu-wolf.github.io/posts/60b1ae39.html"/>
-    <id>https://xu-wolf.github.io/posts/60b1ae39.html</id>
+    <link href="https://coalwolf.github.io/posts/60b1ae39.html"/>
+    <id>https://coalwolf.github.io/posts/60b1ae39.html</id>
     <published>2023-01-06T02:30:48.000Z</published>
     <updated>2023-02-12T07:54:06.000Z</updated>
     
@@ -104,14 +104,14 @@
     
     
     
-    <category term="教程" scheme="https://xu-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://coalwolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>(鸽了)markdown基本语法&amp;hexo使用指北</title>
-    <link href="https://xu-wolf.github.io/posts/67861b1d.html"/>
-    <id>https://xu-wolf.github.io/posts/67861b1d.html</id>
+    <link href="https://coalwolf.github.io/posts/67861b1d.html"/>
+    <id>https://coalwolf.github.io/posts/67861b1d.html</id>
     <published>2022-12-29T07:30:48.000Z</published>
     <updated>2023-02-12T07:54:06.000Z</updated>
     
@@ -133,9 +133,9 @@ example：&lt;/p&gt;
     
     
     
-    <category term="教程" scheme="https://xu-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="markdown" scheme="https://coalwolf.github.io/tags/markdown/"/>
     
-    <category term="markdown" scheme="https://xu-wolf.github.io/tags/markdown/"/>
+    <category term="教程" scheme="https://coalwolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
