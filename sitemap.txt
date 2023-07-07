@@ -1,3 +1,4 @@
+https://carbon-wolf.github.io/posts/725987a9.html
 https://carbon-wolf.github.io/wp-admin/index.html
 https://carbon-wolf.github.io/about/index.html
 https://carbon-wolf.github.io/posts/786d78c9.html
@@ -9,5 +10,7 @@ https://carbon-wolf.github.io/admin/index.html
 https://carbon-wolf.github.io/test/index.html
 https://carbon-wolf.github.io/18+/index.html
 https://carbon-wolf.github.io/
+https://carbon-wolf.github.io/tags/%E5%A4%A7%E9%A5%BC/
+https://carbon-wolf.github.io/tags/fur-wiki/
 https://carbon-wolf.github.io/tags/markdown/
 https://carbon-wolf.github.io/tags/%E6%95%99%E7%A8%8B/

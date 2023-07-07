@@ -6,7 +6,7 @@
   <link href="https://carbon-wolf.github.io/atom.xml" rel="self"/>
   
   <link href="https://carbon-wolf.github.io/"/>
-  <updated>2023-02-12T07:54:06.000Z</updated>
+  <updated>2023-07-07T08:15:42.107Z</updated>
   <id>https://carbon-wolf.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fur-wiki计划</title>
+    <link href="https://carbon-wolf.github.io/posts/725987a9.html"/>
+    <id>https://carbon-wolf.github.io/posts/725987a9.html</id>
+    <published>2023-07-07T08:11:05.000Z</published>
+    <updated>2023-07-07T08:15:42.107Z</updated>
+    
+    <content type="html"><![CDATA[<h1>大饼开画</h1><p>fur-wiki是一个可以自由编辑的关于兽人爱好者的百科网站</p><h1>进度</h1><p>做家务买服务器中</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;大饼开画&lt;/h1&gt;
+&lt;p&gt;fur-wiki是一个可以自由编辑的关于兽人爱好者的百科网站&lt;/p&gt;
+&lt;h1&gt;进度&lt;/h1&gt;
+&lt;p&gt;做家务买服务器中&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="大饼" scheme="https://carbon-wolf.github.io/tags/%E5%A4%A7%E9%A5%BC/"/>
+    
+    <category term="fur-wiki" scheme="https://carbon-wolf.github.io/tags/fur-wiki/"/>
+    
+  </entry>
   
   <entry>
     <title>在Fluid主题的一言中添加作者</title>

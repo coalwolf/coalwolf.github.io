@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://carbon-wolf.github.io/posts/725987a9.html</loc>
+    
+    <lastmod>2023-07-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://carbon-wolf.github.io/wp-admin/index.html</loc>
     
     <lastmod>2023-07-07</lastmod>
@@ -99,6 +108,20 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://carbon-wolf.github.io/tags/%E5%A4%A7%E9%A5%BC/</loc>
+    <lastmod>2023-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://carbon-wolf.github.io/tags/fur-wiki/</loc>
+    <lastmod>2023-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://carbon-wolf.github.io/tags/markdown/</loc>
