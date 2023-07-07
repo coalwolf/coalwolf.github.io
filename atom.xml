@@ -10,7 +10,7 @@
   <id>https://carbon-wolf.github.io/</id>
   
   <author>
-    <name>coolwolf</name>
+    <name>carbon-wolf</name>
     
   </author>
   
@@ -133,9 +133,9 @@ example：&lt;/p&gt;
     
     
     
-    <category term="教程" scheme="https://carbon-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
-    
     <category term="markdown" scheme="https://carbon-wolf.github.io/tags/markdown/"/>
+    
+    <category term="教程" scheme="https://carbon-wolf.github.io/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
